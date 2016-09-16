@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/upload_indicator_margin"
+        android:layout_marginLeft="@dimen/upload_indicator_margin"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:id="@+id/indicator">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/progress_indicator_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:id="@+id/number_value"
+                android:textSize="@dimen/percent_text_size"
+                android:textColor="@color/percent_color"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upload_progress_margin"
+        android:layout_marginRight="@dimen/upload_progress_margin"
+        android:layout_marginBottom="10dp">
+
+        <lindenvalley.de.customprogress.Progress
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/progressBar"
+            android:minHeight="30dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/custom_progressbar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/anim_progress"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/invert_scale"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/progress_invert_background"
+            android:scaleType="fitXY">
+        </ImageView>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="upload_progress_margin">37dp</dimen>
+    <dimen name="upload_indicator_margin">4dp</dimen>
+    <dimen name="percent_text_size">16sp</dimen>
+</resources>

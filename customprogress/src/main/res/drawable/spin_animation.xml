@@ -1,0 +1,9 @@
+<animation-list
+    android:id="@+id/selected"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/progress_slide_1" android:duration="100" />
+    <item android:drawable="@drawable/progress_slide_2" android:duration="100" />
+    <item android:drawable="@drawable/progress_slide_3" android:duration="100" />
+    <item android:drawable="@drawable/progress_slide_4" android:duration="100" />
+</animation-list>
