@@ -13,6 +13,26 @@ Project description
 This module implements the animated progress widget with percent indicator.
  
  ![](http://im.ezgif.com/tmp/ezgif-3044549092.gif)
+ 
+Install
+----------
+
+Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+```
+
+Step 2. Add the dependency
+```
+	dependencies {
+	        compile 'com.github.brezenhem:AnimationProgressBar:1'
+	}
+```
 
 How to use
 ----------
