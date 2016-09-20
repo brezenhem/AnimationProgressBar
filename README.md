@@ -12,7 +12,7 @@ Project description
 -------------------
 This module implements the animated progress widget with percent indicator.
  
- ![](http://im.ezgif.com/tmp/ezgif-3044549092.gif)
+ ![](http://screenshots.collabstar.com/np/circle.gif)
  
 Install
 ----------
